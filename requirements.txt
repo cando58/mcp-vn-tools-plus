@@ -1,7 +1,11 @@
-mcp==1.1.0
-websockets==12.0
-httpx==0.27.2
+# MCP + server + websockets (bắt buộc cho fastmcp)
+mcp[server,websockets]==1.1.1
+
+# Các lib tiện ích bạn đang dùng (RSS, requests…):
 feedparser==6.0.11
-pydantic==2.9.2
+requests==2.32.3
 python-dateutil==2.9.0.post0
-mcp[server,websockets]==1.1.0,<2
+yt-dlp==2024.10.7
+
+# Không cần FastAPI/Starlette nếu bạn chỉ chạy server STDIO.
+# Không cần sse-starlette (gây xung đột phiên bản).
