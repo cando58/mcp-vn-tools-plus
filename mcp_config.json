@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vn-minimal": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["server.py"],
+      "env": {}
+    }
+  }
+}
